@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping List</title>
+
+</head>
+<body>
+    <script>
+        var ul = document.getElementById("products");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode("product99"));
+        ul.appendChild(li);
+    </script>
+
+<div style="padding:16px;">
+	Product: <input type="textbox" placeholder="Enter product name"></input>
+
+Quantity: <select id="converted_dropdown_2">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+</select>
+
+<button class="ui-btn">Add</button>
+
+<ul id="products">
+  <li>product1</li>
+  <li>product2</li>
+  <li>product3</li>
+  <li>product4</li>
+</ul>  
+
+<script type="text/javascript">
+    $("button:#Get").click(function () {
+	$('#msg').html($('input:textbox').val());
+
+});
+
+</script>
+
+</body>
+</html>
